@@ -1,0 +1,28 @@
+/Users/andrew/Temp/Advent-of-Code-2021/Day 7/Part 2/bin/Debug/netcoreapp3.1/Part 2.deps.json
+/Users/andrew/Temp/Advent-of-Code-2021/Day 7/Part 2/bin/Debug/netcoreapp3.1/Part 2.runtimeconfig.json
+/Users/andrew/Temp/Advent-of-Code-2021/Day 7/Part 2/bin/Debug/netcoreapp3.1/Part 2.runtimeconfig.dev.json
+/Users/andrew/Temp/Advent-of-Code-2021/Day 7/Part 2/bin/Debug/netcoreapp3.1/Part 2.dll
+/Users/andrew/Temp/Advent-of-Code-2021/Day 7/Part 2/bin/Debug/netcoreapp3.1/Part 2.pdb
+/Users/andrew/Temp/Advent-of-Code-2021/Day 7/Part 2/obj/Debug/netcoreapp3.1/Part 2.csproj.AssemblyReference.cache
+/Users/andrew/Temp/Advent-of-Code-2021/Day 7/Part 2/obj/Debug/netcoreapp3.1/Part 2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/andrew/Temp/Advent-of-Code-2021/Day 7/Part 2/obj/Debug/netcoreapp3.1/Part 2.AssemblyInfoInputs.cache
+/Users/andrew/Temp/Advent-of-Code-2021/Day 7/Part 2/obj/Debug/netcoreapp3.1/Part 2.AssemblyInfo.cs
+/Users/andrew/Temp/Advent-of-Code-2021/Day 7/Part 2/obj/Debug/netcoreapp3.1/Part 2.csproj.CoreCompileInputs.cache
+/Users/andrew/Temp/Advent-of-Code-2021/Day 7/Part 2/obj/Debug/netcoreapp3.1/Part 2.dll
+/Users/andrew/Temp/Advent-of-Code-2021/Day 7/Part 2/obj/Debug/netcoreapp3.1/Part 2.pdb
+/Users/andrew/Temp/Advent-of-Code-2021/Day 7/Part 2/obj/Debug/netcoreapp3.1/Part 2.genruntimeconfig.cache
+/Users/andrew/Temp/Advent-of-Code-2021/Day 7/Part 2/bin/Debug/netcoreapp3.1/Part 2
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 7\Part 2\obj\Debug\netcoreapp3.1\Part 2.dll
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 7\Part 2\obj\Debug\netcoreapp3.1\Part 2.pdb
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 7\Part 2\bin\Debug\netcoreapp3.1\Part 2.exe
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 7\Part 2\bin\Debug\netcoreapp3.1\Part 2.deps.json
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 7\Part 2\bin\Debug\netcoreapp3.1\Part 2.runtimeconfig.json
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 7\Part 2\bin\Debug\netcoreapp3.1\Part 2.runtimeconfig.dev.json
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 7\Part 2\bin\Debug\netcoreapp3.1\Part 2.dll
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 7\Part 2\bin\Debug\netcoreapp3.1\Part 2.pdb
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 7\Part 2\obj\Debug\netcoreapp3.1\Part 2.csproj.AssemblyReference.cache
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 7\Part 2\obj\Debug\netcoreapp3.1\Part 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 7\Part 2\obj\Debug\netcoreapp3.1\Part 2.AssemblyInfoInputs.cache
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 7\Part 2\obj\Debug\netcoreapp3.1\Part 2.AssemblyInfo.cs
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 7\Part 2\obj\Debug\netcoreapp3.1\Part 2.csproj.CoreCompileInputs.cache
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 7\Part 2\obj\Debug\netcoreapp3.1\Part 2.genruntimeconfig.cache

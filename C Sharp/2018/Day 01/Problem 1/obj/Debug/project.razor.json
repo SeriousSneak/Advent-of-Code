@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\andre\\OneDrive\\Work\\Code\\C#\\Advent of Code\\Day 1\\Problem 1\\Day 1 Problem 1.csproj",
+  "TargetFramework": "v4.6.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+C:/Temp/Drew's code repos/Advent-of-Code-2021/Day 11/bin/Debug/net6.0/Day 11.exe
+C:/Temp/Drew's code repos/Advent-of-Code-2021/Day 11/bin/Debug/net6.0/Day 11.deps.json
+C:/Temp/Drew's code repos/Advent-of-Code-2021/Day 11/bin/Debug/net6.0/Day 11.runtimeconfig.json
+C:/Temp/Drew's code repos/Advent-of-Code-2021/Day 11/bin/Debug/net6.0/Day 11.dll
+C:/Temp/Drew's code repos/Advent-of-Code-2021/Day 11/bin/Debug/net6.0/Day 11.pdb
+C:/Temp/Drew's code repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.csproj.AssemblyReference.cache
+C:/Temp/Drew's code repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.GeneratedMSBuildEditorConfig.editorconfig
+C:/Temp/Drew's code repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.AssemblyInfoInputs.cache
+C:/Temp/Drew's code repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.AssemblyInfo.cs
+C:/Temp/Drew's code repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.csproj.CoreCompileInputs.cache
+C:/Temp/Drew's code repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.dll
+C:/Temp/Drew's code repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/refint/Day 11.dll
+C:/Temp/Drew's code repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.pdb
+C:/Temp/Drew's code repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.genruntimeconfig.cache
+C:/Temp/Drew's code repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/ref/Day 11.dll
+C:/Temp/Repos/Advent-of-Code-2021/Day 11/bin/Debug/net6.0/Day 11.exe
+C:/Temp/Repos/Advent-of-Code-2021/Day 11/bin/Debug/net6.0/Day 11.deps.json
+C:/Temp/Repos/Advent-of-Code-2021/Day 11/bin/Debug/net6.0/Day 11.runtimeconfig.json
+C:/Temp/Repos/Advent-of-Code-2021/Day 11/bin/Debug/net6.0/Day 11.dll
+C:/Temp/Repos/Advent-of-Code-2021/Day 11/bin/Debug/net6.0/Day 11.pdb
+C:/Temp/Repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.csproj.AssemblyReference.cache
+C:/Temp/Repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.GeneratedMSBuildEditorConfig.editorconfig
+C:/Temp/Repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.AssemblyInfoInputs.cache
+C:/Temp/Repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.AssemblyInfo.cs
+C:/Temp/Repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.csproj.CoreCompileInputs.cache
+C:/Temp/Repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.dll
+C:/Temp/Repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/refint/Day 11.dll
+C:/Temp/Repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.pdb
+C:/Temp/Repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.genruntimeconfig.cache
+C:/Temp/Repos/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/ref/Day 11.dll
+/Users/andrew/Temp/Advent-of-Code-2021/Day 11/bin/Debug/net6.0/Day 11
+/Users/andrew/Temp/Advent-of-Code-2021/Day 11/bin/Debug/net6.0/Day 11.deps.json
+/Users/andrew/Temp/Advent-of-Code-2021/Day 11/bin/Debug/net6.0/Day 11.runtimeconfig.json
+/Users/andrew/Temp/Advent-of-Code-2021/Day 11/bin/Debug/net6.0/Day 11.dll
+/Users/andrew/Temp/Advent-of-Code-2021/Day 11/bin/Debug/net6.0/Day 11.pdb
+/Users/andrew/Temp/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.csproj.AssemblyReference.cache
+/Users/andrew/Temp/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.GeneratedMSBuildEditorConfig.editorconfig
+/Users/andrew/Temp/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.AssemblyInfoInputs.cache
+/Users/andrew/Temp/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.AssemblyInfo.cs
+/Users/andrew/Temp/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.csproj.CoreCompileInputs.cache
+/Users/andrew/Temp/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.dll
+/Users/andrew/Temp/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/refint/Day 11.dll
+/Users/andrew/Temp/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.pdb
+/Users/andrew/Temp/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/Day 11.genruntimeconfig.cache
+/Users/andrew/Temp/Advent-of-Code-2021/Day 11/obj/Debug/net6.0/ref/Day 11.dll

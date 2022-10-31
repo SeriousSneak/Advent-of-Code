@@ -1,0 +1,15 @@
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 9\bin\Debug\net6.0\Day 9.exe
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 9\bin\Debug\net6.0\Day 9.deps.json
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 9\bin\Debug\net6.0\Day 9.runtimeconfig.json
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 9\bin\Debug\net6.0\Day 9.dll
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 9\bin\Debug\net6.0\Day 9.pdb
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 9\obj\Debug\net6.0\Day 9.csproj.AssemblyReference.cache
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 9\obj\Debug\net6.0\Day 9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 9\obj\Debug\net6.0\Day 9.AssemblyInfoInputs.cache
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 9\obj\Debug\net6.0\Day 9.AssemblyInfo.cs
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 9\obj\Debug\net6.0\Day 9.csproj.CoreCompileInputs.cache
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 9\obj\Debug\net6.0\Day 9.dll
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 9\obj\Debug\net6.0\refint\Day 9.dll
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 9\obj\Debug\net6.0\Day 9.pdb
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 9\obj\Debug\net6.0\Day 9.genruntimeconfig.cache
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 9\obj\Debug\net6.0\ref\Day 9.dll

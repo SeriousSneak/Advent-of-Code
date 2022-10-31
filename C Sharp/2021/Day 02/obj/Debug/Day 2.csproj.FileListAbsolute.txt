@@ -1,0 +1,8 @@
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 2\obj\Debug\Day 2.csproj.AssemblyReference.cache
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 2\obj\Debug\Day 2.csproj.SuggestedBindingRedirects.cache
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 2\obj\Debug\Day 2.csproj.CoreCompileInputs.cache
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 2\obj\Debug\Part 2.exe
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 2\obj\Debug\Part 2.pdb
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 2\bin\Debug\Part 2.exe.config
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 2\bin\Debug\Part 2.exe
+C:\Temp\Drew's code repos\Advent-of-Code-2021\Day 2\bin\Debug\Part 2.pdb

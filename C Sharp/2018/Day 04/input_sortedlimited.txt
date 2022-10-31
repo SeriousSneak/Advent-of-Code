@@ -1,0 +1,9 @@
+1518-03-03 0002 Guard 947 begins shift
+1518-03-03 0042 falls asleep
+1518-03-03 0055 wakes up
+1518-03-05 0000 Guard 333 begins shift
+1518-03-05 0023 falls asleep
+1518-03-05 0051 wakes up
+1518-03-05 2349 Guard 947 begins shift
+1518-03-06 0002 falls asleep
+1518-03-06 0018 wakes up

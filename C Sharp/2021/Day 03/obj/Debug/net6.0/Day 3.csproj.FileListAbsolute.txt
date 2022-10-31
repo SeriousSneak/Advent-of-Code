@@ -1,0 +1,15 @@
+/Users/andrew/Temp/Advent-of-Code-2021/Day 3/bin/Debug/net6.0/Day 3
+/Users/andrew/Temp/Advent-of-Code-2021/Day 3/bin/Debug/net6.0/Day 3.deps.json
+/Users/andrew/Temp/Advent-of-Code-2021/Day 3/bin/Debug/net6.0/Day 3.runtimeconfig.json
+/Users/andrew/Temp/Advent-of-Code-2021/Day 3/bin/Debug/net6.0/Day 3.dll
+/Users/andrew/Temp/Advent-of-Code-2021/Day 3/bin/Debug/net6.0/Day 3.pdb
+/Users/andrew/Temp/Advent-of-Code-2021/Day 3/obj/Debug/net6.0/Day 3.csproj.AssemblyReference.cache
+/Users/andrew/Temp/Advent-of-Code-2021/Day 3/obj/Debug/net6.0/Day 3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/andrew/Temp/Advent-of-Code-2021/Day 3/obj/Debug/net6.0/Day 3.AssemblyInfoInputs.cache
+/Users/andrew/Temp/Advent-of-Code-2021/Day 3/obj/Debug/net6.0/Day 3.AssemblyInfo.cs
+/Users/andrew/Temp/Advent-of-Code-2021/Day 3/obj/Debug/net6.0/Day 3.csproj.CoreCompileInputs.cache
+/Users/andrew/Temp/Advent-of-Code-2021/Day 3/obj/Debug/net6.0/Day 3.dll
+/Users/andrew/Temp/Advent-of-Code-2021/Day 3/obj/Debug/net6.0/refint/Day 3.dll
+/Users/andrew/Temp/Advent-of-Code-2021/Day 3/obj/Debug/net6.0/Day 3.pdb
+/Users/andrew/Temp/Advent-of-Code-2021/Day 3/obj/Debug/net6.0/Day 3.genruntimeconfig.cache
+/Users/andrew/Temp/Advent-of-Code-2021/Day 3/obj/Debug/net6.0/ref/Day 3.dll

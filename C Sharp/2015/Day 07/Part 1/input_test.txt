@@ -1,0 +1,4 @@
+NOT go -> gp
+kb AND kd -> ke
+hg OR hh -> hi
+jm LSHIFT 1 -> kg

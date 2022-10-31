@@ -1,0 +1,14 @@
+C:\Users\astobart\OneDrive\Work\Code\C#\Advent of Code\Day 2\bin\Debug\Day 2.exe.config
+C:\Users\astobart\OneDrive\Work\Code\C#\Advent of Code\Day 2\bin\Debug\Day 2.exe
+C:\Users\astobart\OneDrive\Work\Code\C#\Advent of Code\Day 2\bin\Debug\Day 2.pdb
+C:\Users\astobart\OneDrive\Work\Code\C#\Advent of Code\Day 2\obj\Debug\Day 2.csprojAssemblyReference.cache
+C:\Users\astobart\OneDrive\Work\Code\C#\Advent of Code\Day 2\obj\Debug\Day 2.csproj.CoreCompileInputs.cache
+C:\Users\astobart\OneDrive\Work\Code\C#\Advent of Code\Day 2\obj\Debug\Day 2.exe
+C:\Users\astobart\OneDrive\Work\Code\C#\Advent of Code\Day 2\obj\Debug\Day 2.pdb
+C:\Users\astobart\OneDrive\Work\Code\Advent of Code\2018\Day 2\bin\Debug\Day 2.exe.config
+C:\Users\astobart\OneDrive\Work\Code\Advent of Code\2018\Day 2\bin\Debug\Day 2.exe
+C:\Users\astobart\OneDrive\Work\Code\Advent of Code\2018\Day 2\bin\Debug\Day 2.pdb
+C:\Users\astobart\OneDrive\Work\Code\Advent of Code\2018\Day 2\obj\Debug\Day 2.csprojAssemblyReference.cache
+C:\Users\astobart\OneDrive\Work\Code\Advent of Code\2018\Day 2\obj\Debug\Day 2.csproj.CoreCompileInputs.cache
+C:\Users\astobart\OneDrive\Work\Code\Advent of Code\2018\Day 2\obj\Debug\Day 2.exe
+C:\Users\astobart\OneDrive\Work\Code\Advent of Code\2018\Day 2\obj\Debug\Day 2.pdb
