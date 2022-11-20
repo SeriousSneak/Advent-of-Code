@@ -4,7 +4,7 @@ Day 01
   
 Programmer: Andrew Stobart
 Part 1 finished on October 30, 2022
-Part 2 finished on October 31, 2022
+Part 2 finished on November 19, 2022
 
 Code created using VS Code on both Mac and Windows.
 #>
@@ -15,6 +15,7 @@ $StartTime = Get-Date
 $floor = 0
 $chars
 $position
+$loopCounter = 0
 $firstTimeInBasementPosition = 0 # will determine what character causes santa to enter the basement for the first time
 
 $data = Get-Content ./input.txt
@@ -22,8 +23,7 @@ $chars = $data.ToCharArray()
 
 foreach ($letter in $chars)
 {
-
-    $firstTimeInBasementPosition++
+    $loopCounter++
     if ($letter -eq '(')
     {
         $floor++
@@ -31,6 +31,11 @@ foreach ($letter in $chars)
     else
     {
         $floor--
+    }
+
+    if ($floor -lt 0 -and $firstTimeInBasementPosition -eq 0)
+    {
+        $firstTimeInBasementPosition = $loopCounter
     }
 }
 
