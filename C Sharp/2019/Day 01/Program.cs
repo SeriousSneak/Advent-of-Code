@@ -17,7 +17,7 @@ var watch = new System.Diagnostics.Stopwatch();
 watch.Start();
 
 // windows
-var lines = File.ReadLines(@"C:\Temp\Repos\Advent-of-Code-2019\Day 01\input.txt");
+var lines = File.ReadLines(@"C:\Temp\Repos\Advent-of-Code\C Sharp\2019\Day 01\input.txt");
 
 // mac
 //var lines = File.ReadLines(@"/Users/andrew/Temp/Advent-of-Code-2021/Day 11/input.txt");
