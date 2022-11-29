@@ -32,7 +32,7 @@ int loopAtLeastOnce = 0;
 foreach (var line in lines)
 {
     // Part 1
-    // this basically always rounds down for the division because we are using Ints.
+    // this always rounds down for the division because we are using Ints.
     singleModuleCalculationPart1 = (Convert.ToInt32(line) / 3) - 2;
     theCountPart1 += singleModuleCalculationPart1;
 
