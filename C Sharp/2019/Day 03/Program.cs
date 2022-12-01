@@ -4,8 +4,8 @@
  * Day 3
  * 
  * Programmer: Andrew Stobart
- * Part 1 finished on
- * Part 2 finished on
+ * Part 1 finished on December 1, 2022
+ * Part 2 finished on December 1, 2022
  *
  * Project details
  *    Targeting .NET 7.0
@@ -15,32 +15,22 @@
 var watch = new System.Diagnostics.Stopwatch();
 watch.Start();
 
+//Windows
+string[] contents = File.ReadAllLines(@"C:\Temp\Repos\Advent-of-Code\C Sharp\2019\Day 03\input.txt");
+
 //Mac
-string[] contents = File.ReadAllLines(@"/Users/andrew/Temp/Advent-of-Code/C Sharp/2019/Day 03/inputtest.txt");
+//string[] contents = File.ReadAllLines(@"/Users/andrew/Temp/Advent-of-Code/C Sharp/2019/Day 03/inputtest.txt");
+
 
 
 string[] wire1Directions = contents[0].Split(',');
 string[] wire2Directions = contents[1].Split(',');
 
+List<Point> wire1Points = new List<Point>();
+List<Point> wire2Points = new List<Point>();
 
 
-// Not sure how big my array needs to be. I'm going to start with 10000 x 10000 and then see if I get any out or bounds errors
-
-string[,] map = new string[10000,10000];
-
-// Fill every cell in the array with a "."
-// I should not hard code 10000 below
-for (int col = 0; col < 10000; col++)
-{
-    for (int row = 0; row < 10000; row++)
-    {
-        map[col, row] = ".";
-    }
-}
-
-Point point = new Point(map.GetUpperBound(0)/2 ,map.GetUpperBound(1)/2); // starting point which is right in the middle of our array
-
-map[point.col, point.row] = "O";
+Point point = new Point(0 ,0); // starting point which is right in the middle of our array
 
 
 // adds a 1 to the map everywhere that the wire goes
@@ -52,20 +42,38 @@ foreach (string direction in wire1Directions)
     switch (whichWay)
     {
         case 'U':
+            for (int y = 1; y <= steps; y++)
+            {
+                point.y++;
+                Point tempPoint = new Point(point.x, point.y);
+                wire1Points.Add(tempPoint);
+            }
             break;
 
         case 'R':
             for (int x = 1; x <= steps; x++)
             {
-                point.col++;
-                map[point.col, point.row] = "1";
+                point.x++;
+                Point tempPoint = new Point(point.x, point.y);
+                wire1Points.Add(tempPoint);
             }
             break;
 
         case 'D':
+            for (int y = 1; y <= steps; y++)
+            {
+                point.y--;
+                Point tempPoint = new Point(point.x, point.y);
+                wire1Points.Add(tempPoint);
+            }
             break;
 
         case 'L':
+            for (int x = 1; x <= steps; x++)
+            {
+                point.x--; Point tempPoint = new Point(point.x, point.y);
+                wire1Points.Add(tempPoint);
+            }
             break;
 
         default:
@@ -76,10 +84,100 @@ foreach (string direction in wire1Directions)
 
 // adds a 2 to the map everywhere that the wire goes, and will add an X if there is an existing 1, which will indicate the wires crossed at that point.
 // instead of adding an X, I could also just calculate the manhattan distance from the starting point to that point
+
+point.x = 0;
+point.y = 0;
+
 foreach (string direction in wire2Directions)
 {
+    char whichWay = direction[0];
+    int steps = Convert.ToInt32(direction.Remove(0, 1));
 
+    switch (whichWay)
+    {
+        case 'U':
+            for (int y = 1; y <= steps; y++)
+            {
+                point.y++;
+                Point tempPoint = new Point(point.x, point.y);
+                wire2Points.Add(tempPoint);
+            }
+            break;
+
+        case 'R':
+            for (int x = 1; x <= steps; x++)
+            {
+                point.x++;
+                Point tempPoint = new Point(point.x, point.y);
+                wire2Points.Add(tempPoint);
+            }
+            break;
+
+        case 'D':
+            for (int y = 1; y <= steps; y++)
+            {
+                point.y--;
+                Point tempPoint = new Point(point.x, point.y);
+                wire2Points.Add(tempPoint);
+            }
+            break;
+
+        case 'L':
+            for (int x = 1; x <= steps; x++)
+            {
+                point.x--;
+                Point tempPoint = new Point(point.x, point.y);
+                wire2Points.Add(tempPoint);
+            }
+            break;
+
+        default:
+            Console.WriteLine("Well crap, our switch statement found an unexpected direction.");
+            break;
+    }
 }
+
+
+//compare all values in the lists to each other and find the common ones. Then calculate the manhattan distance between the starting point and all points that are common
+
+int manhattanDistance = int.MaxValue;
+int totalSteps = int.MaxValue;
+for (int x = 0; x < wire1Points.Count; x++)
+{
+    double percentageComplete = ((double)x / (double)wire1Points.Count) * 100;
+    Console.CursorVisible = false;
+    Console.WriteLine("Analyzing point {0} out of {1}", x, wire1Points.Count);
+    Console.WriteLine("Progress: {0}%", percentageComplete.ToString("F"));
+    Console.SetCursorPosition(0, Console.CursorTop - 2);
+
+    if (wire2Points.Contains(wire1Points[x]))
+    {
+        // Part 1
+        if ((Math.Abs(wire1Points[x].x) + Math.Abs(wire1Points[x].y)) < manhattanDistance)
+        {
+            manhattanDistance = Math.Abs(wire1Points[x].x) + Math.Abs(wire1Points[x].y);
+        }
+        // Part 2
+
+        int wire1Steps = wire1Points.IndexOf(wire1Points[x]) + 1; // we add 1 as the first step is recorded in position 0 of the array
+        int wire2Steps = wire2Points.IndexOf(wire1Points[x]) + 1; // we add 1 as the first step is recorded in position 0 of the array
+
+        if ((wire1Steps + wire2Steps) < totalSteps)
+        {
+            totalSteps = wire1Steps + wire2Steps;
+        }
+
+    }
+}
+
+// Part 1 answer is 225. Run time was 544272ms / 9 minutes.
+// Part 2 answer is 35194.
+
+Console.CursorVisible = true;
+Console.WriteLine("For Part 1, the shortest Manhattan Distance is {0}", manhattanDistance);
+Console.WriteLine("For Part 2, total shortest steps are {0}.", totalSteps);
+
+
 
 
 watch.Stop();
@@ -97,14 +195,14 @@ Console.ReadKey();
 
 public class Point
 {
-    public int row { get; set; }
-    public int col { get; set; }
+    public int x { get; set; }
+    public int y { get; set; }
 
     // constructor
-    public Point(int col, int row)
+    public Point(int x, int y)
     {
-        this.row = row;
-        this.col = col;
+        this.x = x;
+        this.y = y;
     }
 
     public override bool Equals(object? obj)
@@ -115,7 +213,7 @@ public class Point
             return false;
 
         Point point = (Point)obj;
-        return col == point.col && row == point.row;
+        return x == point.x && y == point.y;
     }
 
     public override int GetHashCode()
