@@ -29,11 +29,9 @@ string[] wire2Directions = contents[1].Split(',');
 List<Point> wire1Points = new List<Point>();
 List<Point> wire2Points = new List<Point>();
 
+Point point = new Point(0 ,0); // starting point
 
-Point point = new Point(0 ,0); // starting point which is right in the middle of our array
-
-
-// adds a 1 to the map everywhere that the wire goes
+// create a list of all points that the first wire passes through
 foreach (string direction in wire1Directions)
 {
     char whichWay = direction[0];
@@ -82,12 +80,11 @@ foreach (string direction in wire1Directions)
     }
 }
 
-// adds a 2 to the map everywhere that the wire goes, and will add an X if there is an existing 1, which will indicate the wires crossed at that point.
-// instead of adding an X, I could also just calculate the manhattan distance from the starting point to that point
-
+// reset our starting point now that we are going to map out the second wire
 point.x = 0;
 point.y = 0;
 
+// create a list of all points that the second wire passes through
 foreach (string direction in wire2Directions)
 {
     char whichWay = direction[0];
@@ -138,7 +135,7 @@ foreach (string direction in wire2Directions)
 }
 
 
-//compare all values in the lists to each other and find the common ones. Then calculate the manhattan distance between the starting point and all points that are common
+//compare the lists to each other and find the common ones.
 
 int manhattanDistance = int.MaxValue;
 int totalSteps = int.MaxValue;
@@ -152,15 +149,16 @@ for (int x = 0; x < wire1Points.Count; x++)
 
     if (wire2Points.Contains(wire1Points[x]))
     {
-        // Part 1
+        // Part 1 - calculate the manhattan distances to find the smallest ones
         if ((Math.Abs(wire1Points[x].x) + Math.Abs(wire1Points[x].y)) < manhattanDistance)
         {
             manhattanDistance = Math.Abs(wire1Points[x].x) + Math.Abs(wire1Points[x].y);
         }
-        // Part 2
-
-        int wire1Steps = wire1Points.IndexOf(wire1Points[x]) + 1; // we add 1 as the first step is recorded in position 0 of the array
-        int wire2Steps = wire2Points.IndexOf(wire1Points[x]) + 1; // we add 1 as the first step is recorded in position 0 of the array
+        
+        // Part 2 - find the point that the wires cross where the steps that each wire takes to get there is the lowest out of all points they cross
+        // we need to add 1 to each of these as the first step is recorded in position 0 of the array
+        int wire1Steps = wire1Points.IndexOf(wire1Points[x]) + 1;
+        int wire2Steps = wire2Points.IndexOf(wire1Points[x]) + 1;
 
         if ((wire1Steps + wire2Steps) < totalSteps)
         {
@@ -178,8 +176,6 @@ Console.WriteLine("For Part 1, the shortest Manhattan Distance is {0}", manhatta
 Console.WriteLine("For Part 2, total shortest steps are {0}.", totalSteps);
 
 
-
-
 watch.Stop();
 Console.WriteLine();
 Console.WriteLine($"Execution Time: {watch.ElapsedMilliseconds} ms");
@@ -187,10 +183,6 @@ Console.WriteLine($"Execution Time: {watch.ElapsedMilliseconds} ms");
 Console.WriteLine();
 Console.WriteLine("Press any key to continue.");
 Console.ReadKey();
-
-
-
-
 
 
 public class Point

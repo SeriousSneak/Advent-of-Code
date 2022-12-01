@@ -8,7 +8,7 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\astobart\\.nuget\\packages\\": {}
+    "C:\\Users\\andrew\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -16,18 +16,19 @@
       "projectUniqueName": "C:\\Temp\\Repos\\Advent-of-Code\\C Sharp\\2019\\Day 03\\Day 03.csproj",
       "projectName": "Day 03",
       "projectPath": "C:\\Temp\\Repos\\Advent-of-Code\\C Sharp\\2019\\Day 03\\Day 03.csproj",
-      "packagesPath": "C:\\Users\\astobart\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\andrew\\.nuget\\packages\\",
       "outputPath": "C:\\Temp\\Repos\\Advent-of-Code\\C Sharp\\2019\\Day 03\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\astobart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
