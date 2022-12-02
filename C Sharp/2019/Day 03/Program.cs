@@ -135,8 +135,8 @@ foreach (string direction in wire2Directions)
 }
 
 
-//compare the lists to each other and find the common ones.
 
+// find the Points that are common between the two lists
 int manhattanDistance = int.MaxValue;
 int totalSteps = int.MaxValue;
 for (int x = 0; x < wire1Points.Count; x++)
