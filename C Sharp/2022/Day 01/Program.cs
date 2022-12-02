@@ -21,8 +21,15 @@ string[] contents = File.ReadAllLines(@"C:\Temp\Repos\Advent-of-Code\C Sharp\202
 //Mac
 //string[] contents = File.ReadAllLines(@"/Users/andrew/Temp/Advent-of-Code/C Sharp/2022/Day 01/inputtest.txt");
 
-
-
+int mostCalories = 0;
+int mostCaloriesTemp = 0;
+foreach (string weight in contents)
+{
+    if (weight == "")
+    {
+        mostCaloriesTemp = 0;
+    }
+}
 
 
 Console.WriteLine("For Part 1, ... {0}.");
