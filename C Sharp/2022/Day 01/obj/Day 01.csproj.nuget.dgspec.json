@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Temp\\Repos\\Advent-of-Code\\C Sharp\\2022\\Day 01\\Day 01.csproj": {}
+    "/Users/andrew/Temp/Advent-of-Code/C Sharp/2022/Day 01/Day 01.csproj": {}
   },
   "projects": {
-    "C:\\Temp\\Repos\\Advent-of-Code\\C Sharp\\2022\\Day 01\\Day 01.csproj": {
+    "/Users/andrew/Temp/Advent-of-Code/C Sharp/2022/Day 01/Day 01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Temp\\Repos\\Advent-of-Code\\C Sharp\\2022\\Day 01\\Day 01.csproj",
+        "projectUniqueName": "/Users/andrew/Temp/Advent-of-Code/C Sharp/2022/Day 01/Day 01.csproj",
         "projectName": "Day 01",
-        "projectPath": "C:\\Temp\\Repos\\Advent-of-Code\\C Sharp\\2022\\Day 01\\Day 01.csproj",
-        "packagesPath": "C:\\Users\\astobart\\.nuget\\packages\\",
-        "outputPath": "C:\\Temp\\Repos\\Advent-of-Code\\C Sharp\\2022\\Day 01\\obj\\",
+        "projectPath": "/Users/andrew/Temp/Advent-of-Code/C Sharp/2022/Day 01/Day 01.csproj",
+        "packagesPath": "/Users/andrew/.nuget/packages/",
+        "outputPath": "/Users/andrew/Temp/Advent-of-Code/C Sharp/2022/Day 01/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\astobart\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/andrew/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -54,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

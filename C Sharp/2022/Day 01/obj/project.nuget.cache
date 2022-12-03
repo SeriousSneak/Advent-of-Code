@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EipdcoAbB6OrCdMwVlOtjNedXn+HmvmVVjPpFnJlQ32Ks1w6vn3PUQGC8DbTDPH7gGSeAylQT9pkftKpIL/DWg==",
+  "dgSpecHash": "BKI3ijjZAOWFH4z7ceuHMgm+kU/Hm6u8jvEBOyfdSceSKHeUlOW76HOAH0ga1PVPrniYOBOTpv51xTBNKmR2JA==",
   "success": true,
-  "projectFilePath": "C:\\Temp\\Repos\\Advent-of-Code\\C Sharp\\2022\\Day 01\\Day 01.csproj",
+  "projectFilePath": "/Users/andrew/Temp/Advent-of-Code/C Sharp/2022/Day 01/Day 01.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
