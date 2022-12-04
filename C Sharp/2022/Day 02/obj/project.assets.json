@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/andrew/Repos/Advent-of-Code/C Sharp/2019/Day 03/Day 03.csproj",
-      "projectName": "Day 03",
-      "projectPath": "/Users/andrew/Repos/Advent-of-Code/C Sharp/2019/Day 03/Day 03.csproj",
+      "projectUniqueName": "/Users/andrew/Repos/Advent-of-Code/C Sharp/2022/Day 02/Day 02.csproj",
+      "projectName": "Day 02",
+      "projectPath": "/Users/andrew/Repos/Advent-of-Code/C Sharp/2022/Day 02/Day 02.csproj",
       "packagesPath": "/Users/andrew/.nuget/packages/",
-      "outputPath": "/Users/andrew/Repos/Advent-of-Code/C Sharp/2019/Day 03/obj/",
+      "outputPath": "/Users/andrew/Repos/Advent-of-Code/C Sharp/2022/Day 02/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/andrew/.nuget/NuGet/NuGet.Config"

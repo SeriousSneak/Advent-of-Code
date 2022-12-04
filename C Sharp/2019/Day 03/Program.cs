@@ -16,10 +16,10 @@ var watch = new System.Diagnostics.Stopwatch();
 watch.Start();
 
 //Windows
-string[] contents = File.ReadAllLines(@"C:\Temp\Repos\Advent-of-Code\C Sharp\2019\Day 03\input.txt");
+//string[] contents = File.ReadAllLines(@"C:\Temp\Repos\Advent-of-Code\C Sharp\2019\Day 03\input.txt");
 
 //Mac
-//string[] contents = File.ReadAllLines(@"/Users/andrew/Temp/Advent-of-Code/C Sharp/2019/Day 03/inputtest.txt");
+string[] contents = File.ReadAllLines(@"/Users/andrew/Repos/Advent-of-Code/C Sharp/2019/Day 03/inputtest.txt");
 
 
 
