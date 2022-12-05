@@ -12,14 +12,16 @@
  *    Created with Visual Studio 2022 on Windows 11 and Visual Studio 17 on MacOS 
  */
 
+using System.Globalization;
+
 var watch = new System.Diagnostics.Stopwatch();
 watch.Start();
 
 //Windows
-//string[] contents = File.ReadAllLines(@"C:\Temp\Repos\Advent-of-Code\C Sharp\2022\Day 01\input.txt");
+string[] contents = File.ReadAllLines(@"C:\Temp\Repos\Advent-of-Code\C Sharp\2022\Day 02\input.txt");
 
 //Mac
-string[] contents = File.ReadAllLines(@"/Users/andrew/Repos/Advent-of-Code/C Sharp/2022/Day 02/input.txt");
+//string[] contents = File.ReadAllLines(@"/Users/andrew/Repos/Advent-of-Code/C Sharp/2022/Day 02/input.txt");
 
 List<RockPaperScissors> stratGuide = new List<RockPaperScissors>();
 
@@ -31,99 +33,70 @@ foreach (string line in contents)
 
 int partOneTotalScore = 0;
 int partTwoTotalScore = 0;
+
 for (int x = 0; x < stratGuide.Count; x++)
 {
-    /* Part 1
-    Them:
-    A = Rock (1 point)
-    B = Paper (2 points)
-    C = Scissors (3 points)
+    int them = (stratGuide[x].them - 'A') + 1;
+    int me = (stratGuide[x].me - 'X') + 1;
 
-    Me:
-    X = Rock
-    Y = Paper
-    Z = Scissors
+    /*
+    With the above:
+    1 = Rock
+    2 = Paper
+    3 = Scissors
 
-    Win is 6 points
-    Draw is 3 points
+    if I do "me minus them"
+    
+    Me winning:
+    Scissors - Paper = 1
+    Paper - Rock = 1
+    Rock - Scissors = -2
 
-    Part 2
-    X = I need to lose
-    Y = I need to tie
-    Z = I need to win
-
+    Them winning:
+    Paper - Scissors = -1 
+    Rock - Paper = -1
+    Scissors - Rock = 2
     */
 
-    // in the following calculations, (score based on what I throw, score if I win, tie, or lose)
-    // Them: Rock & Me: Rock
-    if (stratGuide[x].them == 'A' && stratGuide[x].me == 'X')
-    {
-        partOneTotalScore += (1 + 3);
-        partTwoTotalScore += (3 + 0); // I throw scissors to lose 
-    }
+    // Part 2
+    // 1 = lose
+    // 2 = tie
+    // 3 = win
 
-    // Them: Rock & Me: Paper
-    if (stratGuide[x].them == 'A' && stratGuide[x].me == 'Y')
-    {
-        partOneTotalScore += (2 + 6);
-        partTwoTotalScore += (1 + 3); // I throw rock to tie
-    }
+    // Part 1
+    if (me - them == 1 || me - them == -2) // I win
+        partOneTotalScore += 6 + me;
+    
+    else if (me - them == -1 || me - them == 2) // I lose
+        partOneTotalScore += me;
+    
+    else // This should only be hit if we hae a tie
+        partOneTotalScore += 3 + me;
 
-    // Them: Rock & Me: Scissors
-    if (stratGuide[x].them == 'A' && stratGuide[x].me == 'Z')
+    // Part 2
+    if (me == 1) // I need to lose
     {
-        partOneTotalScore += (3 + 0);
-        partTwoTotalScore += (2 + 6); // I throw paper to win
+        if (them == 1)
+            partTwoTotalScore += 3;
+        else
+            partTwoTotalScore += (them - 1);
     }
-
-    // Them: Paper & Me: Rock
-    if (stratGuide[x].them == 'B' && stratGuide[x].me == 'X')
+    else if (me == 2) // I need to draw
     {
-        partOneTotalScore += (1 + 0);
-        partTwoTotalScore += (1 + 0); //I throw rock to lose
+        partTwoTotalScore += (3 + them);
     }
-
-    // Them: Paper & Me: Scissors
-    if (stratGuide[x].them == 'B' && stratGuide[x].me == 'Z')
+    else // I need to win
     {
-        partOneTotalScore += (3 + 6);
-        partTwoTotalScore += (3 + 6); // I throw scissors to win
-    }
-
-    // Them: Paper & Me: Paper
-    if (stratGuide[x].them == 'B' && stratGuide[x].me == 'Y')
-    {
-        partOneTotalScore += (2 + 3);
-        partTwoTotalScore += (2 + 3); // I throw paper to tie
-    }
-
-    // Them: Scissors & Me: Rock
-    if (stratGuide[x].them == 'C' && stratGuide[x].me == 'X')
-    {
-        partOneTotalScore += (1 + 6);
-        partTwoTotalScore += (2 + 0); // I throw paper to lose
-    }
-
-    // Them: Scissors & Me: Paper
-    if (stratGuide[x].them == 'C' && stratGuide[x].me == 'Y')
-    {
-        partOneTotalScore += (2 + 0);
-        partTwoTotalScore += (3 + 3); // I throw scissors to tie
-    }
-
-    // Them: Scissors & Me: Scissors
-    if (stratGuide[x].them == 'C' && stratGuide[x].me == 'Z')
-    {
-        partOneTotalScore += (3 + 3);
-        partTwoTotalScore += (1 + 6); // I throw rock to win
+        if (them == 3)
+            partTwoTotalScore += (1 + 6);
+        else
+            partTwoTotalScore += (them + 1 + 6);
     }
 }
 
 
-
 Console.WriteLine("For Part 1, the total score would be {0}.", partOneTotalScore);
 Console.WriteLine("For Part 2, the total score would be {0}.", partTwoTotalScore);
-
 
 watch.Stop();
 Console.WriteLine();
