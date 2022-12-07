@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 /* Advent of Code 2022
- * Day 3
+ * Day <>
  * 
  * Programmer: Andrew Stobart
  * Part 1 finished on 
