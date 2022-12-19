@@ -18,7 +18,7 @@ var watch = new System.Diagnostics.Stopwatch();
 watch.Start();
 
 // Windows
-string[] contents = File.ReadAllLines(@"C:\Temp\Repos\Advent-of-Code\C Sharp\2022\Day 05\input.txt");
+string[] contents = File.ReadAllLines(@"C:\Temp\Repos\Advent-of-Code\C Sharp\2022\Day 05\inputtest.txt");
 
 // Mac
 //string[] contents = File.ReadAllLines(@"/Users/andrew/Repos/Advent-of-Code/C Sharp/2022/Day 05/inputtest.txt");
@@ -26,7 +26,7 @@ string[] contents = File.ReadAllLines(@"C:\Temp\Repos\Advent-of-Code\C Sharp\202
 
 // Determine how many stacks of crates we have
 int stackCount = 0;
-int rowWhichHoldsStackNumbers = 0;
+int rowWhichHoldsStackNumbers = -1;
 foreach (string line in contents)
 {
     if (line[1] == '1') 
@@ -40,54 +40,36 @@ foreach (string line in contents)
 }
 Console.WriteLine("There are {0} stacks.", stackCount);
 
-List<List<char>> stacksList = new List<List<char>>();
+List<List<char>> stacksListPart1 = new List<List<char>>();
+List<List<char>> stacksListPart2 = new List<List<char>>();
+
 
 for (int i = 0; i < 9; i++)
 {
-    stacksList.Add(new List<char>());
+    stacksListPart1.Add(new List<char>());
+    stacksListPart2.Add(new List<char>());
 }
 
-int pause = 0;
 
+// Fill stacksList with the input
 for (int i = rowWhichHoldsStackNumbers; i >=0; i--)
 {
     int inputPosition = 1;
     string currentRow = contents[i];
-    /*
-    if (currentRow[1] != ' ')
-        stacksList[0].Add(currentRow[1]);
-
-    if (currentRow[5] != ' ')
-        stacksList[1].Add(currentRow[5]);
-
-    if (currentRow[9] != ' ')
-        stacksList[2].Add(currentRow[9]);
-    */
 
     for (int x = 0; x < stackCount; x++)
     {    
         if (currentRow[inputPosition] != ' ')
         {
-            stacksList[x].Add(currentRow[inputPosition]);
+            stacksListPart1[x].Add(currentRow[inputPosition]);
+            stacksListPart2[x].Add(currentRow[inputPosition]);
         }
         inputPosition += 4;
     }
-
 }
 
-
-// Add initial allotment to our stacks
-// Test Input hard coded
-/*
-stacksList[0].Add('Z');
-stacksList[0].Add('N');
-stacksList[1].Add('M');
-stacksList[1].Add('C');
-stacksList[1].Add('D');
-stacksList[2].Add('P');
-*/
-
-
+//List<List<char>> stacksListPart1 = new List<List<char>>(stacksList);
+//List<List<char>> stacksListPart2 = new List<List<char>>(stacksList);
 
 // Code to move our items around
 foreach (string line in contents)
@@ -104,14 +86,25 @@ foreach (string line in contents)
     int moveFrom = int.Parse(subStrings[3]);
     int moveTo = int.Parse(subStrings[5]);
 
+
+    // Part 1
+    
     for (int x = 0; x < amountToMove; x++)
     {
-        stacksList[moveTo - 1].Add(stacksList[moveFrom - 1][(stacksList[moveFrom - 1].Count - 1)]);
-        stacksList[moveFrom - 1].RemoveAt(stacksList[moveFrom - 1].Count - 1);
+        stacksListPart1[moveTo - 1].Add(stacksListPart1[moveFrom - 1][(stacksListPart1[moveFrom - 1].Count - 1)]);
+        stacksListPart1[moveFrom - 1].RemoveAt(stacksListPart1[moveFrom - 1].Count - 1);
     }
+    
 
-
+    // Part 2
+    int positionToRemove = stacksListPart2[moveFrom - 1].Count - amountToMove;
+    for (int x = 0; x < amountToMove; x++)
+    {
+        stacksListPart2[moveTo - 1].Add(stacksListPart2[moveFrom - 1][positionToRemove]);
+        stacksListPart2[moveFrom - 1].RemoveAt(positionToRemove);
+    }
 }
+
 char stackOneTop = ' ';
 char stackTwoTop = ' ';
 char stackThreeTop = ' ';
@@ -122,45 +115,60 @@ char stackSevenTop = ' ';
 char stackEightTop = ' ';
 char stackNineTop = ' ';
 
+
 // this can be a loop
-if (stacksList[0].Count > 0)
-    stackOneTop = stacksList[0][stacksList[0].Count - 1];
+if (stacksListPart1[0].Count > 0)
+    stackOneTop = stacksListPart1[0][stacksListPart1[0].Count - 1];
 
-if (stacksList[1].Count > 0)
-    stackTwoTop = stacksList[1][stacksList[1].Count - 1];
+if (stacksListPart1[1].Count > 0)
+    stackTwoTop = stacksListPart1[1][stacksListPart1[1].Count - 1];
 
-if (stacksList[2].Count > 0)
-    stackThreeTop = stacksList[2][stacksList[2].Count - 1];
+if (stacksListPart1[2].Count > 0)
+    stackThreeTop = stacksListPart1[2][stacksListPart1[2].Count - 1];
 
-if (stacksList[3].Count > 0)
-    stackFourTop = stacksList[3][stacksList[3].Count - 1];
+if (stacksListPart1[3].Count > 0)
+    stackFourTop = stacksListPart1[3][stacksListPart1[3].Count - 1];
 
-if (stacksList[4].Count > 0)
-    stackFiveTop = stacksList[4][stacksList[4].Count - 1];
+if (stacksListPart1[4].Count > 0)
+    stackFiveTop = stacksListPart1[4][stacksListPart1[4].Count - 1];
 
-if (stacksList[5].Count > 0)
-    stackSixTop = stacksList[5][stacksList[5].Count - 1];
+if (stacksListPart1[5].Count > 0)
+    stackSixTop = stacksListPart1[5][stacksListPart1[5].Count - 1];
 
-if (stacksList[6].Count > 0)
-    stackSevenTop = stacksList[6][stacksList[6].Count - 1];
+if (stacksListPart1[6].Count > 0)
+    stackSevenTop = stacksListPart1[6][stacksListPart1[6].Count - 1];
 
-if (stacksList[7].Count > 0)
-    stackEightTop = stacksList[7][stacksList[7].Count - 1];
+if (stacksListPart1[7].Count > 0)
+    stackEightTop = stacksListPart1[7][stacksListPart1[7].Count - 1];
 
-if (stacksList[8].Count > 0)
-    stackNineTop = stacksList[8][stacksList[8].Count - 1];
+if (stacksListPart1[8].Count > 0)
+    stackNineTop = stacksListPart1[8][stacksListPart1[8].Count - 1];
 
 
-Console.WriteLine("The crates at the top of the stacks starting with stack 1 are {0}{1}{2}{3}{4}{5}{6}{7}{8}",
-    stackOneTop,
-    stackTwoTop, 
-    stackThreeTop, 
-    stackFourTop, 
-    stackFiveTop,
-    stackSixTop, 
-    stackSevenTop,
-    stackEightTop, 
-    stackNineTop);
+Console.WriteLine("For Part 1, the crates at the top of the stacks starting with stack 1 are {0}{1}{2}{3}{4}{5}{6}{7}{8}",
+stackOneTop,
+stackTwoTop, 
+stackThreeTop, 
+stackFourTop, 
+stackFiveTop,
+stackSixTop, 
+stackSevenTop,
+stackEightTop, 
+stackNineTop);
+
+    /*
+        stacksListPart1[0].LastOrDefault(' '),
+    stacksListPart1[1].LastOrDefault(' '),
+    stacksListPart1[2].LastOrDefault(' '),
+    stacksListPart1[3].LastOrDefault(' '),
+    stacksListPart1[4].LastOrDefault(' '),
+    stacksListPart1[5].LastOrDefault(' '),
+    stacksListPart1[6].LastOrDefault(' '),
+    stacksListPart1[7].LastOrDefault(' '),
+    stacksListPart1[8].LastOrDefault(' '),
+    stacksListPart1[9].LastOrDefault(' '));
+    */
+
 
 /*
 Console.WriteLine("The crates at the top of the stacks starting with stack 1, are {0}{1}{2}{3}{4}{5}{6}{7}{8}",
