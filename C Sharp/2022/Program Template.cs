@@ -19,7 +19,7 @@ watch.Start();
 string[] contents = File.ReadAllLines(@"C:\Temp\Repos\Advent-of-Code\C Sharp\2022\Day 01\input.txt");
 
 // Mac
-//string[] contents = File.ReadAllLines(@"/Users/andrew/Temp/Advent-of-Code/C Sharp/2022/Day 01/inputtest.txt");
+//string[] contents = File.ReadAllLines(@"/Users/andrew/Repos/Advent-of-Code/C Sharp/2022/Day 01/inputtest.txt");
 
 
 
