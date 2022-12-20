@@ -1,9 +1,7 @@
 ﻿<Properties StartupConfiguration="{91103B87-D821-4D0A-8E23-D50F835E2DBA}|Default">
-  <MonoDevelop.Ide.ItemProperties.Day_22005 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="37" Column="1" />
+      <File FileName="Program.cs" Line="23" Column="195" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,11 +13,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/andrew/Repos/Advent-of-Code/C Sharp/2022/Day 05/Program.cs" relfile="Program.cs" line="35" column="9" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Day_22005 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

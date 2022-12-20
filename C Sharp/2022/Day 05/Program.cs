@@ -16,11 +16,11 @@ var watch = new System.Diagnostics.Stopwatch();
 watch.Start();
 
 // Windows
-string[] contents = File.ReadAllLines(@"C:\Temp\Repos\Advent-of-Code\C Sharp\2022\Day 05\aoc_2022_day05_large_input.txt"); // in 15 mins my code had done 150 moves out of 100,000
+//string[] contents = File.ReadAllLines(@"C:\Temp\Repos\Advent-of-Code\C Sharp\2022\Day 05\aoc_2022_day05_large_input.txt"); // in 15 mins my code had done 150 moves out of 100,000
 //string[] contents = File.ReadAllLines(@"C:\Temp\Repos\Advent-of-Code\C Sharp\2022\Day 05\input.txt");  // my code ran in 93 ms
 
 // Mac
-//string[] contents = File.ReadAllLines(@"/Users/andrew/Repos/Advent-of-Code/C Sharp/2022/Day 05/inputtest.txt");
+string[] contents = File.ReadAllLines(@"/Users/andrew/Repos/Advent-of-Code/C Sharp/2022/Day 05/aoc_2022_day05_large_input.txt"); // for the large input on the Mac Mini my code ran in 28343612 ms
 
 
 // Determine how many stacks of crates we have

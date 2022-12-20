@@ -8,26 +8,25 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\astobart\\.nuget\\packages\\": {}
+    "/Users/andrew/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Temp\\Repos\\Advent-of-Code\\C Sharp\\2022\\Day 05\\Day 05.csproj",
+      "projectUniqueName": "/Users/andrew/Repos/Advent-of-Code/C Sharp/2022/Day 05/Day 05.csproj",
       "projectName": "Day 05",
-      "projectPath": "C:\\Temp\\Repos\\Advent-of-Code\\C Sharp\\2022\\Day 05\\Day 05.csproj",
-      "packagesPath": "C:\\Users\\astobart\\.nuget\\packages\\",
-      "outputPath": "C:\\Temp\\Repos\\Advent-of-Code\\C Sharp\\2022\\Day 05\\obj\\",
+      "projectPath": "/Users/andrew/Repos/Advent-of-Code/C Sharp/2022/Day 05/Day 05.csproj",
+      "packagesPath": "/Users/andrew/.nuget/packages/",
+      "outputPath": "/Users/andrew/Repos/Advent-of-Code/C Sharp/2022/Day 05/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\astobart\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/andrew/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
@@ -60,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }
