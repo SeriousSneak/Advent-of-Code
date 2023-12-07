@@ -6,7 +6,7 @@
  * 
  * Programmer: Andrew Stobart
  * Part 1 finished on December 6, 2023
- * Part 2 finished on 
+ * Part 2 finished on December 7, 2023
  *
  * Project details
  *    Targeting .NET 8.0
@@ -85,6 +85,7 @@ for (int x = 0; x < contents.Length; x++)
         {
             wordNumber += c;
 
+            // check to see if we have found a word number
             if (wordNumber.Contains("zero"))
             {
                 foundNumber = 0;
@@ -139,8 +140,33 @@ for (int x = 0; x < contents.Length; x++)
                 {
                     secondNum = foundNumber;
                 }
+
+                // a string like eightwo will result in a second number of 2, so if we find eight we have to keep the t at the end and not clear the wordNumber string
+                if (foundNumber == 8)
+                {
+                    wordNumber = "t";
+                }
+                else if (foundNumber == 2)
+                {
+                    wordNumber = "o";
+                }
+                else if (foundNumber == 0)
+                {
+                    wordNumber = "o";
+                }
+                else if (foundNumber == 1 || foundNumber == 3 || foundNumber == 5 || foundNumber == 9)
+                {
+                    wordNumber = "e";
+                }
+                else if (foundNumber == 7)
+                {
+                    wordNumber = "n";
+                }
+                else
+                {
+                    wordNumber = "";
+                }
                 foundNumber = -1;
-                wordNumber = "";
             }
         }
     }
@@ -148,11 +174,6 @@ for (int x = 0; x < contents.Length; x++)
     entry++;
     part2TotalSum += (firstNum * 10 + secondNum);
 }
-
-// 54095 is too low for part 2
-
-// Line 231: one5thcfourndbphpxszjmt7eightwof
-// My code says 18, but real answer is 12. I need to account for numbers that have overlapping letters like eightwo. Maybe I need to read from the right to find the second digit?
 
 Console.WriteLine("For Part 1 the total sum is {0}.", part1TotalSum);
 Console.WriteLine("For Part 2 the total sum is {0}.", part2TotalSum);
