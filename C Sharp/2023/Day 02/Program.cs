@@ -22,7 +22,7 @@ var watch = new System.Diagnostics.Stopwatch();
 watch.Start();
 
 // Windows
-string[] contents = File.ReadAllLines(@"\\Mac\Home\Documents\Advent-of-Code\C Sharp\2023\Day 02\input.txt");
+string[] contents = File.ReadAllLines(@"C:\_Temp\Repos\Advent-of-Code\C Sharp\2023\Day 02\inputtest.txt");
 
 // constants
 int redConst = 12;
@@ -34,20 +34,22 @@ int part1Answer = 0;
 // need to parse the input file
 foreach (string line in contents)
 {
-    string[] stringSeparators = new string[] { ": ", ", ", "; "," " };
+    string[] stringSeparators = new string[] { ": ", ", "," " };
     string[] subStrings = line.Split(stringSeparators, StringSplitOptions.None);
 
     int red = 0;
     int green = 0;
     int blue = 0;
+    int set = 1;
+    bool gameIsPossible = false;
 
     for (int x = 3; x < subStrings.Length; x+=2)
     {
-        // colour names will be in odd cells, and the number of them will be the cell before
-        // Cell 0: Game
-        // Cell 1: Game number
+        // colour names will be in odd cells starting at cell 3, and the number of them will be the cell before
+        // Cell 0: "Game"
+        // Cell 1: <Game number>
         // Cell 2: numer of balls of which colour is in Cell 3
-        // Cell 4: number of balls of which colour is int cell 5
+        // Cell 4: number of balls of which colour is in cell 5
 
         switch (subStrings[x])
         {
@@ -63,20 +65,101 @@ foreach (string line in contents)
                 red += Convert.ToInt32(subStrings[x - 1]);
                 break;
 
+            case "blue;":
+                blue += Convert.ToInt32(subStrings[x - 1]);
+                Console.WriteLine("Game {0} Set {1}: I found {2} blue, {3} green, and {4} red.", gameNumber, set, blue, green, red);
+                if ((blue <= blueConst) && (green <= greenConst) && (red <= redConst))
+                {
+                    Console.WriteLine("Game {0} Set {1} would have been possible.", gameNumber, set);
+                    gameIsPossible = true;
+                }
+                else
+                {
+                    Console.WriteLine("Game {0} Set {1} would have been impossible.", gameNumber, set);
+                    gameIsPossible = false;
+                    x = subStrings.Length; // No point in evaluating the remaining sets for this game if this game would not be possible
+                }
+                red = 0;
+                green = 0;
+                blue = 0;
+                set++;
+                break;
+
+            case "green;":
+                green += Convert.ToInt32(subStrings[x - 1]);
+                Console.WriteLine("Game {0} Set {1}: I found {2} blue, {3} green, and {4} red.", gameNumber, set, blue, green, red);
+                if ((blue <= blueConst) && (green <= greenConst) && (red <= redConst))
+                {
+                    Console.WriteLine("Game {0} Set {1} would have been possible.", gameNumber, set);
+                    gameIsPossible = true;
+                }
+                else
+                {
+                    Console.WriteLine("Game {0} Set {1} would have been impossible.", gameNumber, set);
+                    gameIsPossible = false;
+                    x = subStrings.Length; // No point in evaluating the remaining sets for this game if this game would not be possible
+                }
+                red = 0;
+                green = 0;
+                blue = 0;
+                set++;
+                break;
+
+            case "red;":
+                red += Convert.ToInt32(subStrings[x - 1]);
+                Console.WriteLine("Game {0} Set {1}: I found {2} blue, {3} green, and {4} red.", gameNumber, set, blue, green, red);
+                if ((blue <= blueConst) && (green <= greenConst) && (red <= redConst))
+                {
+                    Console.WriteLine("Game {0} Set {1} would have been possible.", gameNumber, set);
+                    gameIsPossible = true;
+                }
+                else
+                {
+                    Console.WriteLine("Game {0} Set {1} would have been impossible.", gameNumber, set);
+                    gameIsPossible = false;
+                    x = subStrings.Length; // No point in evaluating the remaining sets for this game if this game would not be possible
+                }
+                red = 0;
+                green = 0;
+                blue = 0;
+                set++;
+                break;
+
             default:
-                Console.WriteLine("An unrecognized colour was found");
+                //Console.WriteLine("An unexpected character was encounted. WTF!!!!!");
                 break;
         }
-    }
-    Console.WriteLine("Game {0}: I found {1} blue, {2} green, and {3} red.", gameNumber, blue, green, red);
+        if (x == subStrings.Length - 1)
+        {
+            Console.WriteLine("Game {0} Set {1}: I found {2} blue, {3} green, and {4} red.", gameNumber, set, blue, green, red);
+            if ((blue <= blueConst) && (green <= greenConst) && (red <= redConst))
+            {
+                Console.WriteLine("Game {0} Set {1} would have been possible.", gameNumber, set);
+                gameIsPossible = true;
+            }
+            else
+            {
+                Console.WriteLine("Game {0} Set {1} would have been impossible.", gameNumber, set);
+                gameIsPossible = false;
+                x = subStrings.Length; // No point in evaluating the remaining sets for this game if this game would not be possible
+            }
+            red = 0;
+            green = 0;
+            blue = 0;
+            set++;
+        }
 
-    if ((blue <= blueConst) && (green <= greenConst) && (red <= redConst))
+    }
+
+    if (gameIsPossible == true)
     {
-        Console.WriteLine("Game {0} would have been possible.", gameNumber);
         part1Answer += gameNumber;
     }
-    gameNumber++;
+        
 
+    gameNumber++;
+    gameIsPossible = false;
+    Console.WriteLine();
 }                                                      
 
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\Documents\\Advent-of-Code\\C Sharp\\2023\\Day 02\\Day 02.csproj": {}
+    "C:\\_Temp\\Repos\\Advent-of-Code\\C Sharp\\2023\\Day 02\\Day 02.csproj": {}
   },
   "projects": {
-    "Z:\\Documents\\Advent-of-Code\\C Sharp\\2023\\Day 02\\Day 02.csproj": {
+    "C:\\_Temp\\Repos\\Advent-of-Code\\C Sharp\\2023\\Day 02\\Day 02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\Documents\\Advent-of-Code\\C Sharp\\2023\\Day 02\\Day 02.csproj",
+        "projectUniqueName": "C:\\_Temp\\Repos\\Advent-of-Code\\C Sharp\\2023\\Day 02\\Day 02.csproj",
         "projectName": "Day 02",
-        "projectPath": "Z:\\Documents\\Advent-of-Code\\C Sharp\\2023\\Day 02\\Day 02.csproj",
+        "projectPath": "C:\\_Temp\\Repos\\Advent-of-Code\\C Sharp\\2023\\Day 02\\Day 02.csproj",
         "packagesPath": "C:\\Users\\andrew\\.nuget\\packages\\",
-        "outputPath": "Z:\\Documents\\Advent-of-Code\\C Sharp\\2023\\Day 02\\obj\\",
+        "outputPath": "C:\\_Temp\\Repos\\Advent-of-Code\\C Sharp\\2023\\Day 02\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
