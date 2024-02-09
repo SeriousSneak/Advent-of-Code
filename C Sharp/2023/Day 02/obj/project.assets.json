@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\andrew\\.nuget\\packages\\": {}
+    "C:\\Users\\astobart\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\_Temp\\Repos\\Advent-of-Code\\C Sharp\\2023\\Day 02\\Day 02.csproj",
+      "projectUniqueName": "C:\\Temp\\Repos\\Advent-of-Code\\C Sharp\\2023\\Day 02\\Day 02.csproj",
       "projectName": "Day 02",
-      "projectPath": "C:\\_Temp\\Repos\\Advent-of-Code\\C Sharp\\2023\\Day 02\\Day 02.csproj",
-      "packagesPath": "C:\\Users\\andrew\\.nuget\\packages\\",
-      "outputPath": "C:\\_Temp\\Repos\\Advent-of-Code\\C Sharp\\2023\\Day 02\\obj\\",
+      "projectPath": "C:\\Temp\\Repos\\Advent-of-Code\\C Sharp\\2023\\Day 02\\Day 02.csproj",
+      "packagesPath": "C:\\Users\\astobart\\.nuget\\packages\\",
+      "outputPath": "C:\\Temp\\Repos\\Advent-of-Code\\C Sharp\\2023\\Day 02\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\astobart\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
