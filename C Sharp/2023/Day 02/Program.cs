@@ -3,7 +3,7 @@
  * 
  * Programmer: Andrew Stobart
  * Part 1 finished on February 09, 2024
- * Part 2 finished on
+ * Part 2 finished on February 09, 2024
  *
  * Project details
  *    Targeting .NET 8.0
